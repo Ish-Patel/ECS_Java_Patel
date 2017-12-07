@@ -1,0 +1,25 @@
+package Assignment7;
+
+import java.util.Scanner;
+
+public class CountingMachineRevisited 
+{
+	public static void main(String[] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.print("Count From: ");
+		int cf = keyboard.nextInt();
+		System.out.print("Count To: ");
+		int ct = keyboard.nextInt();
+		System.out.print("Count By: ");
+		int cb = keyboard.nextInt();
+		
+		for (int n = cf; n <= ct; n = n + cb)
+		{
+			System.out.print(" "+n);
+		}
+		
+		keyboard.close();
+	}
+}
