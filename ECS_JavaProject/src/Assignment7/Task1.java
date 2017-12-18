@@ -12,7 +12,7 @@ public class Task1
 		System.out.print("Message: ");
 		String message = keyboard.nextLine();
 		
-		for (int n = 1 ; n <= 5 ; n = n+1)
+		for (int n = 2 ; n <= 20 ; n = n+3)
 			System.out.println(n+") "+message);
 		
 		keyboard.close();

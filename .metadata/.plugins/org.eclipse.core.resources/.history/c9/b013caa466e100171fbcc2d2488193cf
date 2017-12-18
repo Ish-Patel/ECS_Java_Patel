@@ -1,0 +1,15 @@
+package Assignment8;
+
+public class Keychains 
+{
+	public static void main(String[] args)
+	{
+		System.out.println("_____________________");
+		System.out.println("\tKeychain Shop");
+		System.out.println("1) Add Chains");
+		System.out.println("2) Subtract Chains");
+		System.out.println("3) View Current Order");
+		System.out.println("4) Checkout");
+		System.out.println("_____________________");
+	}
+}

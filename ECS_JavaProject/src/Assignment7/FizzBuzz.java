@@ -7,12 +7,15 @@ public class FizzBuzz
 				
 		for (int n = 1; n <= 100; n++)
 		{
-			if (n % 3 == 0)
-				System.out.println("Fizz");
+			if (n % 15 == 0)
+				System.out.print("FizzBuzz");
+			else if (n % 3 == 0)
+				System.out.print("Fizz");
 			else if (n % 5 == 0)
-				System.out.println("Buzz");
+				System.out.print("Buzz");
 			else
-				System.out.println(" "+n);
+				System.out.print(" "+n);
+			System.out.println(" ");
 		}
 
 	}

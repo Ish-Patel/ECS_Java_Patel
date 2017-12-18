@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+import java.util.Random;
+
+public class EggDrop 
+
+{
+	public static void main(String[] args)
+	{
+		Random rng = new Random();
+		
+		int n = rng.nextInt(100) + 1;
+		int m = n;
+		int c = 0;
+		
+		while (c < 20)
+		{
+			System.out.print((c + 1) + ">");
+			int guess = keyboard.nextInt();
+		
+			if ( guess == m)
+				System.out.println("Correct");
+			else if ( guess != m )
+				System.out.println("Incorrct");
+			c++;
+		}
+
+	}
+}

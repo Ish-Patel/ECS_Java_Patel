@@ -1,0 +1,24 @@
+package Assignment8;
+
+import java.util.Scanner;
+
+public class FindingPrimes 
+
+{
+	public static void main(String[] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.print("Prime From: ");
+		int cf = keyboard.nextInt();
+		System.out.print("Prime To: ");
+		int ct = keyboard.nextInt();
+		
+		for (int n = cf; n <= ct; n = n++)
+		{
+			System.out.print(" "+n);
+		}
+		
+		keyboard.close();
+	}
+}

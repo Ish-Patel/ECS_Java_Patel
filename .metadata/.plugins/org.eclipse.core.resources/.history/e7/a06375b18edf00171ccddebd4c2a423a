@@ -1,0 +1,49 @@
+package Assignment8;
+
+import java.util.Scanner;
+
+public class FindingPrimes 
+
+{
+	public static void main(String[] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		boolean pri = false;
+		
+		System.out.print("Prime From: ");
+		int cf = keyboard.nextInt();
+		System.out.print("Prime To: ");
+		int ct = keyboard.nextInt();
+		
+		for (int n = cf; n <= ct; n = n + 1)
+		{
+			System.out.print(" "+n);
+			pri = prime(n);
+			
+			if (pri = true)
+				break;
+		}
+		
+		if (pri = true)
+			System.out.println("<");
+		else 
+			System.out.println(" ");
+		
+		keyboard.close();
+	}
+
+	private static boolean prime(int n) 
+	{
+		boolean prim = false;
+		
+		for (int x = 2; x < n; x = x + 1)
+		{
+			if (n%x != 0)
+				prim = true;
+				break;
+		}
+		
+		return(prim);
+	}
+}
